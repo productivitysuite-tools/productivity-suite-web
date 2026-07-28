@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://productivitysuite-tools.github.io/productivity-suite/sitemap.xml

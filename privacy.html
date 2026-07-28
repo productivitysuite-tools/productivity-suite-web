@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Productivity Suite privacy summary: what stays local and what may be transmitted for licence checks.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://productivitysuite-tools.github.io/productivity-suite-web/privacy.html">
+<meta name="theme-color" content="#2b4dd6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy — Productivity Suite">
+<meta property="og:description" content="What stays local and what may be transmitted in Productivity Suite.">
+<meta property="og:url" content="https://productivitysuite-tools.github.io/productivity-suite-web/privacy.html">
+<title>Privacy — Productivity Suite</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='10' fill='%232b4dd6'/%3E%3Cpath d='M10 8h14v18H10z' fill='white'/%3E%3Cpath d='M13 12h7M13 16h7M13 20h4' stroke='%232b4dd6' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<script src="site.js" defer></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="nav">
+<a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Productivity Suite</a>
+<nav class="nav-links" aria-label="Primary">
+<a href="index.html">Home</a>
+<a href="research-packs/index.html">Research Packs</a>
+<a href="autofill-pro/index.html">AutoFill Pro</a>
+</nav>
+<div class="nav-controls"><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark mode">☾</button><label class="language-picker"><span class="visually-hidden">Language</span><select data-language-selector aria-label="Choose language"><option value="en">English</option><option value="es">Español</option><option value="ca">Català</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="it">Italiano</option><option value="pt">Português</option><option value="nl">Nederlands</option><option value="ja">日本語</option><option value="zh_CN">简体中文</option></select></label></div>
+</header>
+<main class="main" id="main-content">
+<section class="section">
+<p class="eyebrow">Privacy</p>
+<h1>Local-first by default.</h1>
+<div class="panel">
+<h2>What stays local</h2>
+<p>Research Packs stores pack names, URLs, notes, tags, domains, capture dates and optional descriptive source metadata in Chrome local extension storage. AutoFill Pro stores profiles, local preferences, website rules containing a domain, optional path, selected profile and automation mode, a limited fill diagnostic history, and learned field corrections containing the domain, an anonymous field fingerprint and the associated profile field. Rules, diagnostics and corrections never store entered values or full page contents.</p>
+<p>When a Pro user enables enriched source metadata, Research Packs asks Chrome for optional access only to the selected sites. Author, description, publication date, site, language, content type, DOI and canonical URL are read and processed locally. This access can be declined, and no page content or metadata is sent to Productivity Suite servers.</p>
+<p>When a Pro user opens Reading View, Research Packs requests optional access only to that source. The readable article text is processed temporarily on the device, is never stored or uploaded, and is removed from memory when the view closes. A closed source may be loaded in a temporary background tab that is closed automatically after extraction.</p>
+<p>When a Pro user creates a local summary, Research Packs temporarily uses the readable text from one source or from 2 to 6 selected sources to create a synthesis, select relevant points, attribute them to their source and detect frequent topics. The extractive summary is created entirely on the device, is not saved automatically, is not sent to an AI service or external server, and is removed from memory when the summary or dashboard closes.</p>
+<p>If the user selects another language for a summary, Research Packs uses Chrome's built-in Translator API. Chrome may download the required language pack to the device; translation runs locally and the source text and summary are not sent to Productivity Suite or an external translation service.</p>
+<p>Sign-in, authentication, SSO/OAuth and other restricted pages are excluded from metadata reading and are saved with basic tab information only. They never block metadata capture for other selected sources.</p>
+<p>When AutoFill Pro runs, it reads visible form labels and technical field attributes on the current page to identify compatible controls. That information is processed on the device. Form contents and page contents are not sent to Productivity Suite servers, and the extension never submits a form.</p>
+<p>AutoFill Pro may keep a limited local diagnostic and activity history containing the domain, profile identifier, fill method and counters. Learned corrections keep the domain, an anonymous field fingerprint and the associated profile field. These records never contain entered values, passwords or payment information.</p>
+<h2>What may be transmitted</h2>
+<p>ExtensionPay handles payment and licence verification for Pro plans, and its payment provider processes the checkout. Productivity Suite does not receive card details. Your research packs, profile values and form contents are not sent to ExtensionPay.</p>
+<p>For licence checks, ExtensionPay handles the email used at checkout, an installation key and the licence or subscription status over HTTPS.</p>
+<h2>Chrome Web Store Limited Use</h2>
+<p>Productivity Suite's use and transfer of information received from Chrome APIs complies with the Chrome Web Store User Data Policy, including the Limited Use requirements. User data is used only to provide or improve the extension features described to the user. It is not sold, used for personalised advertising, transferred for unrelated purposes or used to determine creditworthiness or offer loans.</p>
+<h2>Website privacy</h2>
+<p>This website does not use analytics, advertising cookies, tracking pixels or newsletter forms. It stores only your chosen language and colour theme in local browser storage. If you email support, Gmail processes the message you choose to send.</p>
+<h2>Deletion and backups</h2>
+<p>You can delete extension data by removing individual packs or profiles, clearing the available local histories, or uninstalling the extension. Uninstalling removes its Chrome local storage, so export a JSON backup first if you want to keep a copy.</p>
+<h2>Contact</h2>
+<p><a href="mailto:support.productivitysuite@gmail.com">support.productivitysuite@gmail.com</a></p>
+</div>
+</section>
+</main>
+<footer class="footer">
+<span>© <span id="year">2026</span> Productivity Suite</span>
+<nav aria-label="Footer">
+<a href="index.html">Home</a>
+<a href="support.html">Support</a>
+<a href="index.html#faq">FAQ</a>
+</nav>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="i18n-extra.generated.js"></script>
+<script src="i18n-ca-extra.js"></script>
+<script src="i18n.js"></script>
+</body>
+</html>
